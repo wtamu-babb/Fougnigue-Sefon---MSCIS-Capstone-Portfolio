@@ -1,1 +1,1 @@
-Built using the FastAI library, this machine learning model classifies images of sports balls with a 94% accuracy. It's designed to assist E-commerce platforms in categorizing product images uploaded by sellers, significantly reducing the manual effort required and enhancing the shopping experience for customers.
+Utilizes TensorFlow.js with pre-trained models to detect multiple objects in real-time through a webcam feed
