@@ -15,10 +15,14 @@ The dataset used for model training, featuring user behavior metrics on a websit
 
 ## Setup and Installation
 Before running the application, ensure you have Python and Streamlit installed. Follow these steps to set up the project:
-Download the Repository: Clone or download this repository to your local machine.
-Install Dependencies: Navigate to the project directory and install required dependencies
-Configure Paths: Update the file_path in the scripts to point to the location of online_shoppers_intention.csv and adjust the save_path in FinalModelsSelected.py where the models and preprocessors are saved.
-Run the Application: To run the Streamlit app, execute the following command in your terminal: streamlit run app.py
+### Download the Repository
+Clone or download this repository to your local machine.
+### Install Dependencies
+Navigate to the project directory and install required dependencies
+### Configure Paths
+Update the file_path in the scripts to point to the location of online_shoppers_intention.csv and adjust the save_path in FinalModelsSelected.py where the models and preprocessors are saved.
+### Run the Application
+To run the Streamlit app, execute the following command in your terminal: streamlit run app.py
 
 ## How It Works
 The Synthesis Prototype Project integrates core components of the MSCISBA program:
