@@ -1,0 +1,1 @@
+A web application that leverages a logistic regression model to evaluate the likelihood of financial fraud in corporate financial statements. The model is based on the influential work of Kanapickiene and Grundiene (2015).
