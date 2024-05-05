@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Times new roman",sans-serif;
+  
+}
+body{
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0)), url(https://cdn.britannica.com/59/94459-050-DBA42467/Skyline-Chicago.jpg);
+  background-position: center;
+  background-size: cover;
+  /*justify-content: center;
+  align-content: center;*/
+  
+}
+.whole_page{
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  overflow: hidden; 
+  
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;  
+}
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+nav{
+    flex: 1;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    color: #9b59b6;
+}
+.row{
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+    /*margin: 15% 0; */
+    
+}
+.column-left{
+    color: white;
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+    font-size: 17px;
+}
+.column-middle{
+    flex-basis: 20%;
+    position: relative;  
+}
+.button-fraud-eg{
+  width: 180px ;
+  color: #000 ;
+  padding:12px 0px ;
+  font-size: 13px;
+  font-weight: bold;
+  background:white ;
+  border: 0;
+  border-radius: 20px;
+  margin-top: 30px;
+  transition: background-color 0.5s ease;
+}
+.button-fraud-eg:hover{
+  background-color: #9b59b6;
+  cursor: pointer;
+}
+.button-fraud-eg:active {
+  transform: translateY(-1px)
+}
+.button-no-fraud-eg{
+  width: 180px ;
+  color: #000 ;
+  padding:12px 0px ;
+  font-size: 13px;
+  font-weight: bold;
+  background:white ;
+  border: 0;
+  border-radius: 20px;
+  margin-top: 30px;
+  transition: background-color 0.5s ease;
+}
+.button-no-fraud-eg:hover{
+  background-color: #9b59b6;
+  cursor: pointer;
+}
+.button-no-fraud-eg:active {
+  transform: translateY(-1px)
+}
+.button-clear{
+  width: 180px ;
+  color: #000 ;
+  padding:12px 0px ;
+  font-size: 13px;
+  font-weight: bold;
+  background:white ;
+  border: 0;
+  border-radius: 20px;
+  margin-top: 30px;
+  transition: background-color 0.5s ease;
+}
+.button-clear:hover{
+  background-color: #9b59b6;
+  cursor: pointer;
+}
+.button-clear:active {
+  transform: translateY(-1px)
+}
+.column-right{
+    flex-basis: 40%;
+    position: relative;  
+    align-items: center;
+  justify-content: center;
+}
+.detector{
+  width: 70%;
+  height: 100%;
+  background-color: rgba(189, 195, 199, 0.4);
+  padding: 25px 30px;
+  border-radius: 25px;
+  margin-left: 40px;
+}
+.detector-title{
+  font-size: 25px;
+  font-weight: 800;
+  color: black;
+  text-align: center;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  border-radius: 5px;
+}
+.detector-content .box-space{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+.detector-content .box-space .input-box{
+  margin-bottom: 10px;
+  width: calc(100% / 2 - 20px);
+}
+.box-space .input-box .input-box-name{
+  color: white;
+  font-size: 17px;
+  flex-shrink: 5px;
+}
+.box-space .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 2px solid #000000;
+  border-bottom-width: 2px;
+}
+.button-verdict{
+  margin-bottom: 10px;
+  width: calc(100% / 2 - 20px);
+  margin-top: 20px;
+  margin-right: -10px;
+  border-radius: 5px;
+  /*border: none;*/
+  cursor: pointer;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  transition: background-color 1s ease;
+  font-size: 25px;
+  font-weight: 800;
+}
+/*.detector-content .box-space button{ 
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: black;
+   font-size: 25px;
+   font-weight: 800;
+   letter-spacing: 1px;
+   cursor: pointer;
+   background: linear-gradient(135deg, #71b7e6, #9b59b6);
+   transition: background-color 1s ease;
+ }*/
+.button-verdict:active {
+  transform: translateY(-1px)
+}
+
+/*.detector-content .button-verdict button:active {
+  transform: translateY(-1px)
+}*/
+ .button-verdict:hover{
+  color: white
+}
+/*.detector-content .button-verdict button:hover{
+  color: white
+}*/
+.detector .detector-result{
+  /*height: 80%;
+  width: 100%;*/
+  font-size: 20px;
+  border-radius: 5px;
+  color: black;
+  font-weight: 800;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  text-align: center;  
+}
+
+
+
+@media screen and (max-width:1086px){
+  .row{
+    flex-direction: column;    
+  }
+  .column-left{
+    flex-basis: 100%;
+    margin-top: 40px;
+  }
+  .column-middle{
+    flex-basis: 20%;
+    margin-bottom: 40px;
+  }
+  .column-right{
+    flex-basis: 40%;
+  }
+ .detector{
+   width: 70%;
+   height: 100%;
+   background-color: rgba(189, 195, 199, 0.4);
+   padding: 25px 30px;
+   border-radius: 25px;
+   margin-left: 40px;
+}
+}

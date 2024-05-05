@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Fraud Detector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="whole-page">
+    <div class="navbar">
+      <nav>
+        <ul id="menu-list">
+          <li><a>Fougnigue Sefon</a></li>
+          <li><a href="https://www.linkedin.com/in/fougnigue-sefon-12b276192/" target="_blank">MyLinkedin</a></li>
+          <li><a href="https://github.com/sefonf1" target="_blank">MyGithub</a></li>
+          <li><a href="">MyPortfolio</a></li>
+        </ul>
+      </nav>
+      <img src="https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/256x256/menu.png" class="menu-icon"
+        onclick="ToggleMenu()">
+    </div>
+    <div class="row">
+      <div class="column-left">
+        <h3>Financial Fraud Regression Model Web Application</h3>
+        <p>If you've noticed the backdrop of this application, it represents Chicago—a city highlighted by Forbes as one
+          of the major hubs for financial fraud in the United States. This choice is not accidental but a subtle nod to
+          the subject matter of this web application, which I developed as a Master's student in Computer Information
+          Systems at West Texas A&M University.</p>
+        <p>This web application, named the <strong>Fraud Detector</strong>, is designed to assess the potential for
+          financial fraud within corporate data. It implements a logistic regression model based on the influential work
+          of Kanapickiene and Grundiene (2015), which offers robust insights into financial fraud detection. If you
+          possess company data and wish to evaluate the likelihood of fraud, you can input the data into the detector on
+          the right side of the screen.</p>
+        <p>Below, you will find three useful buttons designed to help you familiarize yourself with the application's
+          functionality:</p>
+        <ul>
+          <li><strong>Fraudulent Data Example:</strong> Automatically populates the form with data from a fraudulent
+            company.</li>
+          <li><strong>Non-Fraudulent Data Example:</strong> Loads data from a company without fraud.</li>
+          <li><strong>Clear Form:</strong> Resets the form completely, allowing for a fresh start with new data.</li>
+        </ul>
+        <p>Simply click on any of these options and then select "Verdict" to see how the application processes and
+          analyzes the data. This practical tool is aimed at demonstrating both the application of advanced analytical
+          techniques and the ease of user interaction with complex data systems.</p>
+
+        </p>
+      </div>
+      <div class="column-middle">
+        <button onclick="FraudExample()" class="button-fraud-eg">Fraudulent Data Example</button>
+        <button onclick="NoFraudExample()" class="button-no-fraud-eg">Non Fraudulent Data Example</button>
+        <button onclick="Clear()" class="button-clear">Clear Form</button>
+      </div>
+      <div class="column-right">
+        <div class="detector">
+          <div class="detector-title">Financial Fraud Detector</div>
+          <div class="detector-content">
+            <div class="box-space">
+              <div class="input-box">
+                <label for="inventory" class="input-box-name">Inventory</label>
+                <input type="number" id="inventory" placeholder="Enter inventory" required>
+              </div>
+              <div class="input-box">
+                <label for="cash" class="input-box-name">Cash</label>
+                <input type="number" id="cash" placeholder="Enter cash" required>
+              </div>
+              <div class="input-box">
+                <label for="fixed-assets" class="input-box-name">Fixed Assets</label>
+                <input type="number" id="fixed-assets" placeholder="Enter fixed assets" required>
+              </div>
+              <div class="input-box">
+                <label for="total-assets" class="input-box-name">Total Assets</label>
+                <input type="number" id="total-assets" placeholder="Enter total assets" required>
+              </div>
+              <div class="input-box">
+                <label for="current-liabilties" class="input-box-name">Current Liabilities</label>
+                <input type="number" id="current-liabilities" placeholder="Enter current liabilities" required>
+              </div>
+              <div class="input-box">
+                <label for="total-liabilities" class="input-box-name">Total Liabilities</label>
+                <input type="number" id="total-liabilities" placeholder="Enter total liabilities" required>
+              </div>
+              <div class="input-box">
+                <label for="sales" class="input-box-name">Sales</label>
+                <input type="number" id="sales" placeholder="Enter sales" required>
+              </div>
+              <button onclick="FraudFunction()" class="button-verdict">Verdict</button>
+            </div>
+          </div>
+          <div class="detector-result">
+            <p id="detector-result"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js">
+
+  </script>
+
+</body>
+
+</html>
