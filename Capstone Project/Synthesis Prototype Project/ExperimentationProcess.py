@@ -149,7 +149,7 @@ print("\nCatBoost Evaluation:")
 print(classification_report(y_test, cat_model.predict(X_test)))
 
 
-# Combining selected models with a Voting Classifier for a robust prediction
+# Combining selected models with a Voting Classifier for prediction
 ensemble = VotingClassifier(estimators=[
     ('lr', lr_model), # Logistic Regression
     ('rf', rf_model), # Random Forest
